@@ -1,0 +1,48 @@
+﻿using AdministradorChatBot.Interfaces;
+using AdministradorChatBot.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace AdministradorChatBot.Controllers
+{
+    public class AuthController(IAuthService _authService) : Controller
+    {
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(string username, string password)
+        {
+            var user = await _authService.LoginAsync(username, password);
+            if (user == null)
+            {
+                ModelState.AddModelError("", "Usuario o contraseña incorrectos.");
+                return View();
+            }
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
+        }
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var user = await _authService.RegisterAsync(model.Username, model.Password);
+            return RedirectToAction("Login"); // o redireccioná a la página principal
+        }
+    }
+}

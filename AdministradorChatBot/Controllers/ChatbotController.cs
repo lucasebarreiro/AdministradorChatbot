@@ -1,22 +1,11 @@
 using AdministradorChatBot.Interfaces;
 using AdministradorChatBot.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
 
 namespace AdministradorChatBot.Controllers
 {
-    public class ChatbotController : Controller
+    public class ChatbotController(IChatbotService _chatbotService) : Controller
     {
-
-        private readonly IChatbotService _chatbotService;
-
-        public ChatbotController(IChatbotService chatbotService)
-        {
-            _chatbotService = chatbotService;
-        }
-
-
         [HttpGet]
         public IActionResult CrearChatbot()
         {
@@ -34,9 +23,6 @@ namespace AdministradorChatBot.Controllers
             await _chatbotService.CrearChatbotAsync(model, userId);
 
             return RedirectToAction("Index");
-
-            
         }
-
     }
 }

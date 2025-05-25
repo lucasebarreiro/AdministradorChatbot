@@ -4,15 +4,8 @@ using AdministradorChatBot.Repositories;
 
 namespace AdministradorChatBot.Services;
 
-public class ChatbotService : IChatbotService
+public class ChatbotService(IChatbotRepository _chatbotRepository) : IChatbotService
 {
-    private readonly IChatbotRepository _chatbotRepository;
-
-    public ChatbotService(IChatbotRepository chatbotRepository)
-    {
-        _chatbotRepository = chatbotRepository;
-    }
-
     public async Task CrearChatbotAsync(ChatbotCreateViewModel model, int userId)
     {
         var chatbot = new Chatbot

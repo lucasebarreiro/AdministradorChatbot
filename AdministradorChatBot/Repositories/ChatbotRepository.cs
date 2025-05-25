@@ -4,23 +4,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AdministradorChatBot.Repositories;
 
-public interface IChatbotRepository
+public class ChatbotRepository(ChatbotDbContext _context) : IChatbotRepository
 {
-    Task AddAsync(Chatbot chatbot);
-    Task<Chatbot?> GetByIdAsync(int id);
-    Task<List<Chatbot>> GetByUserIdAsync(int userId);
-    Task DeleteAsync(int id);
-}
-
-public class ChatbotRepository : IChatbotRepository
-{
-    private readonly ChatbotDbContext _context;
-
-    public ChatbotRepository(ChatbotDbContext context)
-    {
-        _context = context;
-    }
-
     public async Task AddAsync(Chatbot chatbot)
     {
         _context.Chatbots.Add(chatbot);
@@ -53,5 +38,19 @@ public class ChatbotRepository : IChatbotRepository
             await _context.SaveChangesAsync();
         }
     }
-}
 
+    public async Task<List<Chatbot>> GetChatbotsByUserIdAsync(int userId)
+    {
+        return await _context.Chatbots
+            .Where(c => c.UserId == userId)
+            .ToListAsync();
+    }
+
+    public Task<Chatbot?> GetChatbotWithKeywordsAndResponsesAsync(int chatbotId)
+    {
+        return _context.Chatbots
+            .Include(ck => ck.ChatbotKeywords)
+            .ThenInclude(cr => cr.ChatbotResponses)
+            .FirstOrDefaultAsync(c => c.Id == chatbotId);
+    }
+}

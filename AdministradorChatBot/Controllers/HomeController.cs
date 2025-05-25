@@ -1,32 +1,36 @@
+using AdministradorChatBot.Interfaces;
 using AdministradorChatBot.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
-namespace AdministradorChatBot.Controllers
+namespace AdministradorChatBot.Controllers;
+
+public class HomeController(IChatbotService _chatbotService) : Controller
 {
-    public class HomeController : Controller
+    public IActionResult Index()
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        return View();
     }
+
+    public IActionResult CreateChatbot()
+    {
+        return View();
+    }
+
+    public IActionResult Chat()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult CreateChatbot(Chatbot chatbot)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View(chatbot);
+        }
+        _chatbotService.CreateChatbot(chatbot);
+
+        return RedirectToAction("Index");
+    }
+
 }

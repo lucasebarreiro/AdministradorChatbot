@@ -15,5 +15,5 @@ public partial class User
     public string PasswordHash { get; set; } = null!;
 
     [InverseProperty("User")]
-    public virtual ICollection<Chatbot> Chatbots { get; set; } = new List<Chatbot>();
+    public virtual ICollection<Chatbot> Chatbots { get; set; } = [];
 }

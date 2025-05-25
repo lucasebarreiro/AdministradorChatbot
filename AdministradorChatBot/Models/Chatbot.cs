@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
 namespace AdministradorChatBot.Models;
 
@@ -12,14 +9,15 @@ public partial class Chatbot
     public int Id { get; set; }
 
     [StringLength(100)]
+    [Required]
     public string Name { get; set; } = null!;
 
     public int UserId { get; set; }
 
     [InverseProperty("Chatbot")]
-    public virtual ICollection<ChatbotKeyword> ChatbotKeywords { get; set; } = new List<ChatbotKeyword>();
-
+    public virtual List<ChatbotKeyword> ChatbotKeywords { get; set; } = [];
     [ForeignKey("UserId")]
     [InverseProperty("Chatbots")]
-    public virtual User User { get; set; } = null!;
+    public virtual User? User { get; set; }
+    public string Description { get; set; } = null!;
 }

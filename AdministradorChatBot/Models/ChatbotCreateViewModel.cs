@@ -6,23 +6,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AdministradorChatBot.Models;
 
-public partial class Chatbot
-{
-    [Key]
-    public int Id { get; set; }
+using System.ComponentModel.DataAnnotations;
 
+public class ChatbotCreateViewModel
+{
+    [Required]
     [StringLength(100)]
     public string Name { get; set; } = null!;
 
+    [Required]
     [StringLength(500)]
     public string Description { get; set; } = null!;
 
-    public int UserId { get; set; }
+    [Required]
+    [StringLength(255)]
+    public string Question { get; set; } = null!;
 
-    [InverseProperty("Chatbot")]
-    public virtual ICollection<ChatbotKeyword> ChatbotKeywords { get; set; } = new List<ChatbotKeyword>();
+    [Required]
+    [MinLength(1)]
+    public List<QuestionViewModel> Questions { get; set; } = new() { new QuestionViewModel() };
 
-    [ForeignKey("UserId")]
-    [InverseProperty("Chatbots")]
-    public virtual User User { get; set; } = null!;
 }

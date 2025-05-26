@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
 namespace AdministradorChatBot.Models;
 
@@ -18,8 +15,8 @@ public partial class ChatbotKeyword
 
     [ForeignKey("ChatbotId")]
     [InverseProperty("ChatbotKeywords")]
-    public virtual Chatbot Chatbot { get; set; } = null!;
+    public virtual Chatbot? Chatbot { get; set; }
 
     [InverseProperty("Keyword")]
-    public virtual ICollection<ChatbotResponse> ChatbotResponses { get; set; } = new List<ChatbotResponse>();
+    public virtual List<ChatbotResponse> ChatbotResponses { get; set; } = [];
 }

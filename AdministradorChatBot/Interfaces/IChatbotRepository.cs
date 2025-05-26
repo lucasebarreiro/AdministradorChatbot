@@ -1,5 +1,6 @@
 ﻿using AdministradorChatBot.Models;
 
+<<<<<<< HEAD
 namespace AdministradorChatBot.Interfaces
 {
     public interface IChatbotRepository
@@ -10,3 +11,14 @@ namespace AdministradorChatBot.Interfaces
         Task DeleteAsync(int id);
     }
 }
+=======
+namespace AdministradorChatBot.Interfaces;
+
+public interface IChatbotRepository
+{
+    Task CreateChatbotAsync(Chatbot chatbot);
+    Task<List<Chatbot>> GetChatbotsByUserIdAsync(int userId);
+    Task<Chatbot?> GetChatbotWithKeywordsAndResponsesAsync(int chatbotId);
+}
+
+>>>>>>> origin/pw3-barreiro

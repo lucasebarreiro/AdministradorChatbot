@@ -1,37 +1,22 @@
 ﻿using AdministradorChatBot.Interfaces;
 using AdministradorChatBot.Models;
-using AdministradorChatBot.Repositories;
 
 namespace AdministradorChatBot.Services;
 
 public class ChatbotService(IChatbotRepository _chatbotRepository) : IChatbotService
 {
-    public async Task CrearChatbotAsync(ChatbotCreateViewModel model, int userId)
+    public async Task CreateChatbot(Chatbot chatbot)
     {
-        var chatbot = new Chatbot
-        {
-            Name = model.Name,
-            Description = model.Description,
-            UserId = userId
-        };
+        await _chatbotRepository.CreateChatbotAsync(chatbot);
+    }
 
-        // Recorre todas las preguntas del formulario
-        foreach (var questionVm in model.Questions)
-        {
-            var keyword = new ChatbotKeyword
-            {
-                Keyword = questionVm.Question,
-                Chatbot = chatbot
-            };
+    public Task<List<Chatbot>> GetChatbotsByUserIdAsync(int userId)
+    {
+        throw new NotImplementedException();
+    }
 
-            foreach (var answer in questionVm.Answers.Where(a => !string.IsNullOrWhiteSpace(a)))
-            {
-                keyword.ChatbotResponses.Add(new ChatbotResponse { Response = answer });
-            }
-
-            chatbot.ChatbotKeywords.Add(keyword);
-        }
-
-        await _chatbotRepository.AddAsync(chatbot);
+    public Task<Chatbot?> GetChatbotWithKeywordsAndResponsesAsync(int chatbotId)
+    {
+        throw new NotImplementedException();
     }
 }

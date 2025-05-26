@@ -1,10 +1,11 @@
 ﻿using AdministradorChatBot.Models;
 
-namespace AdministradorChatBot.Interfaces
-{
-    public interface IChatbotService
-    {
+namespace AdministradorChatBot.Interfaces;
 
-        Task CrearChatbotAsync(ChatbotCreateViewModel model, int userId);
-    }
+public interface IChatbotService
+{
+    Task CreateChatbot(Chatbot chatbot);
+    Task<List<Chatbot>> GetChatbotsByUserIdAsync(int userId);
+    Task<Chatbot?> GetChatbotWithKeywordsAndResponsesAsync(int chatbotId);
+
 }

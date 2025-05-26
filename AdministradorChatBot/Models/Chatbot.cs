@@ -22,5 +22,4 @@ public partial class Chatbot
     [ForeignKey("UserId")]
     [InverseProperty("Chatbots")]
     public virtual User? User { get; set; }
-    public string Description { get; set; } = null!;
 }

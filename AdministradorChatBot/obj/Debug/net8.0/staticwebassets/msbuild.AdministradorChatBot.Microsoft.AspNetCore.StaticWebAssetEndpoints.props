@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AdministradorChatBot.hrwfuxjygv.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Y/pFTtoROGDHnRnfalVIzaAgS\u002BJ3ucviPqcQv3MxNtg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Y/pFTtoROGDHnRnfalVIzaAgS\u002BJ3ucviPqcQv3MxNtg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 21 May 2025 21:48:47 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Y/pFTtoROGDHnRnfalVIzaAgS\u002BJ3ucviPqcQv3MxNtg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 01:23:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AdministradorChatBot/AdministradorChatBot.hrwfuxjygv.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AdministradorChatBot.hrwfuxjygv.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hrwfuxjygv"},{"Name":"integrity","Value":"sha256-Y/pFTtoROGDHnRnfalVIzaAgS\u002BJ3ucviPqcQv3MxNtg="},{"Name":"label","Value":"_content/AdministradorChatBot/AdministradorChatBot.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Y/pFTtoROGDHnRnfalVIzaAgS\u002BJ3ucviPqcQv3MxNtg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 21 May 2025 21:48:47 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1138"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Y/pFTtoROGDHnRnfalVIzaAgS\u002BJ3ucviPqcQv3MxNtg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 01:23:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AdministradorChatBot/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

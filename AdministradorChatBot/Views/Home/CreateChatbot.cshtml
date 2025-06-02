@@ -3,6 +3,7 @@
 
 @{
     ViewData["Title"] = "Crear Chatbot";
+    var userId = Context.Session.GetInt32("Id");
 }
 
 <h2>Crear Chatbot</h2>
@@ -13,7 +14,7 @@
         <input asp-for="Name" class="form-control"/>
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-    <input style="visibility: hidden" asp-for=UserId value="7"/>
+    <input style="visibility: hidden" asp-for=UserId value="@userId"/>
     <div>
         <label for="Description">Descripcion del Chatbot</label>
         <input asp-for="Description" class="form-control" />

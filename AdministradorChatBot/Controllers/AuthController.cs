@@ -20,7 +20,8 @@ namespace AdministradorChatBot.Controllers
                 ModelState.AddModelError("", "Usuario o contraseña incorrectos.");
                 return View();
             }
-
+            HttpContext.Session.SetInt32("Id", user.Id);
+            HttpContext.Session.SetString("Username", user.Username);
             return RedirectToAction("Index", "Home");
         }
 

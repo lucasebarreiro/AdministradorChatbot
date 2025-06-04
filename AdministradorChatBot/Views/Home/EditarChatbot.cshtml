@@ -1,0 +1,106 @@
+﻿@model Chatbot
+
+@{
+    ViewData["Title"] = "Editar Chatbot";
+    var userId = Context.Session.GetInt32("Id");
+}
+
+<h2>Editar Chatbot</h2>
+
+<form asp-action="EditarChatbot" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="UserId" value="@userId" />
+
+    <div>
+        <label for="Name">Nombre del Chatbot</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label for="Description">Descripción del Chatbot</label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <hr />
+    <h4>Preguntas y sus 5 respuestas</h4>
+
+    <div id="keywords-container">
+        @if (Model.ChatbotKeywords != null && Model.ChatbotKeywords.Count > 0)
+        {
+            for (int i = 0; i < Model.ChatbotKeywords.Count; i++)
+            {
+                <div class="keyword-block mb-3 card p-3">
+                    <label>Pregunta:</label>
+                    <input name="ChatbotKeywords[@i].Keyword" value="@Model.ChatbotKeywords[i].Keyword" class="form-control" required />
+                    <span class="text-danger field-validation-valid" data-valmsg-for="ChatbotKeywords[@i].Keyword" data-valmsg-replace="true"></span>
+
+                    <div class="responses mt-2">
+                        @for (int j = 0; j < 5; j++)
+                        {
+                            var responseText = Model.ChatbotKeywords[i].ChatbotResponses.Count > j
+                            ? Model.ChatbotKeywords[i].ChatbotResponses[j].Response
+                            : "";
+
+                            <div>
+                                <label>Respuesta @(j + 1):</label>
+                                <input name="ChatbotKeywords[@i].ChatbotResponses[@j].Response" value="@responseText" class="form-control mb-1" required />
+                                <span class="text-danger field-validation-valid" data-valmsg-for="ChatbotKeywords[@i].ChatbotResponses[@j].Response" data-valmsg-replace="true"></span>
+                            </div>
+                        }
+                    </div>
+
+                    <button type="button" class="btn btn-danger mt-2" onclick="this.closest('.card').remove()">Eliminar Pregunta</button>
+                    <hr />
+                </div>
+            }
+        }
+    </div>
+
+    <button type="button" id="add-keyword-btn" class="btn btn-secondary" onclick="addKeyword()">Agregar otra Pregunta</button>
+
+    <br /><br />
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        let keywordIndex = @Model.ChatbotKeywords?.Count ?? 1;
+
+        function addKeyword() {
+            const container = document.getElementById("keywords-container");
+
+            const card = document.createElement("div");
+            card.className = "card mb-3 p-3";
+
+            let html = `
+                        <div class="mb-2">
+                            <label class="form-label">Pregunta (Keyword)</label>
+                            <input name="ChatbotKeywords[${keywordIndex}].Keyword" class="form-control" required />
+                            <span class="text-danger field-validation-valid" data-valmsg-for="ChatbotKeywords[${keywordIndex}].Keyword" data-valmsg-replace="true"></span>
+                        </div>
+                        <div class="mb-2">
+                    `;
+
+            for (let j = 0; j < 5; j++) {
+                html += `
+                            <label>Respuesta: ${j + 1}</label>
+                            <input name="ChatbotKeywords[${keywordIndex}].ChatbotResponses[${j}].Response" class="form-control mb-1" required />
+                            <span class="text-danger field-validation-valid" data-valmsg-for="ChatbotKeywords[${keywordIndex}].ChatbotResponses[${j}].Response" data-valmsg-replace="true"></span>
+                        `;
+            }
+
+            html += `
+                        </div>
+                        <button type="button" class="btn btn-danger mt-2" onclick="this.closest('.card').remove()">Eliminar Pregunta</button>
+                    `;
+
+            card.innerHTML = html;
+            container.appendChild(card);
+            keywordIndex++;
+        }
+    </script>
+}
+

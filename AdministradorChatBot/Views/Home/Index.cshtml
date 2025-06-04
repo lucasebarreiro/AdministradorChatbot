@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<Chatbot>
+
+@{
     ViewData["Title"] = "Home Page";
     var userId = Context.Session.GetInt32("Id");
     var username= Context.Session.GetString("Username");
@@ -8,4 +10,23 @@
     <h1 class="display-4">Welcome: @username</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <a asp-controller="Home" asp-action="CreateChatbot"> Crear chatbot </a>
+</div>
+
+<h2>Mis Chatbots</h2>
+
+<div class="row">
+    @foreach (var bot in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">@bot.Name</h5>
+                    <p class="card-text">Descripcion: @bot.Description</p>
+                    <a asp-action="EditarChatbot" asp-route-id="@bot.Id" class="btn btn-primary">Editar</a>
+                    <a asp-action="EliminarChatbot" asp-route-id="@bot.Id" class="btn btn-danger">Eliminar</a>
+                    <a asp-action="Chat" asp-route-id="@bot.Id" class="btn btn-success">Chatear</a>
+                </div>
+            </div>
+        </div>
+    }
 </div>

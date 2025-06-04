@@ -12,11 +12,21 @@ public class ChatbotService(IChatbotRepository _chatbotRepository) : IChatbotSer
 
     public Task<List<Chatbot>> GetChatbotsByUserIdAsync(int userId)
     {
-        throw new NotImplementedException();
+        return _chatbotRepository.GetChatbotsByUserIdAsync(userId);
     }
 
     public Task<Chatbot?> GetChatbotWithKeywordsAndResponsesAsync(int chatbotId)
     {
-        throw new NotImplementedException();
+        return _chatbotRepository.GetChatbotWithKeywordsAndResponsesAsync(chatbotId);
     }
+
+    public void UpdateChatbot(Chatbot chatbot)
+    {
+        _chatbotRepository.UpdateChatbot(chatbot);
+    }
+    public async Task DeleteChatbotAsync(Chatbot chatbot)
+    {
+        await _chatbotRepository.DeleteChatbotAsync(chatbot);
+    }
+
 }

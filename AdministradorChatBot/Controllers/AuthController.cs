@@ -45,5 +45,6 @@ namespace AdministradorChatBot.Controllers
             var user = await _authService.RegisterAsync(model.Username, model.Password);
             return RedirectToAction("Login"); // o redireccioná a la página principal
         }
+
     }
 }

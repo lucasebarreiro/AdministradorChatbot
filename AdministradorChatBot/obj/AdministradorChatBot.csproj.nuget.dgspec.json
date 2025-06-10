@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot.csproj": {}
+    "C:\\Users\\Usuario\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\AdministradorChatBot.csproj": {}
   },
   "projects": {
-    "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot.csproj": {
+    "C:\\Users\\Usuario\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\AdministradorChatBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\AdministradorChatBot.csproj",
         "projectName": "AdministradorChatBot",
-        "projectPath": "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot.csproj",
-        "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\AdministradorChatBot.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\AdministradorChatbot\\AdministradorChatBot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

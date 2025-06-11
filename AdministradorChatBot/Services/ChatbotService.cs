@@ -24,10 +24,27 @@ public class ChatbotService(IChatbotRepository _chatbotRepository) : IChatbotSer
         session.SetString(key, json);
     }
 
+    private string Normalize(string input)
+    {
+        if (string.IsNullOrWhiteSpace(input))
+            return string.Empty;
+
+        // Quita signos de puntuación y espacios, y pasa a minúsculas
+        var normalized = new string(input
+            .Where(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c))
+            .ToArray())
+            .ToLower()
+            .Trim();
+
+        return normalized;
+    }
+
     public string GetChatbotResponse(Chatbot chatbot, string userMessage)
     {
+        var normalizedUserMessage = Normalize(userMessage);
+
         var keyword = chatbot?.ChatbotKeywords
-            .FirstOrDefault(k => string.Equals(k.Keyword, userMessage, StringComparison.OrdinalIgnoreCase));
+            .FirstOrDefault(k => normalizedUserMessage.Contains(Normalize(k.Keyword)));
 
         if (keyword != null && keyword.ChatbotResponses.Any())
         {
@@ -38,6 +55,7 @@ public class ChatbotService(IChatbotRepository _chatbotRepository) : IChatbotSer
         }
         return "No tengo una respuesta para eso.";
     }
+
 
     public async Task CreateChatbot(Chatbot chatbot)
     {

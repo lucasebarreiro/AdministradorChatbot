@@ -13,12 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\banner_chatbot.png",
-      "PackagePath": "staticwebassets\\img\\banner_chatbot.png"
+      "Id": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\banner-chatbot.png",
+      "PackagePath": "staticwebassets\\img\\banner-chatbot.png"
     },
     {
       "Id": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\chatbot-default.png",
       "PackagePath": "staticwebassets\\img\\chatbot-default.png"
+    },
+    {
+      "Id": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\login-chatbot.png",
+      "PackagePath": "staticwebassets\\img\\login-chatbot.png"
     },
     {
       "Id": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\js\\site.js",

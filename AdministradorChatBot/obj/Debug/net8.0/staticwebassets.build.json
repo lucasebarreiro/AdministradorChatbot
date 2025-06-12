@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HmUCbBGjTy3GFsIZJ8hbQWDkbZqbs47cINJFmQGOULk=",
+  "Hash": "lm4zNX+MbFV9ztt/FHpwEYJTTkYgF6wuAoREVXCF6Iw=",
   "Source": "AdministradorChatBot",
   "BasePath": "_content/AdministradorChatBot",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a4i8kbz234",
-      "Integrity": "ul0a2xycSNU6CXwUPcI2c6qZkADpHe4jd2hT6lkkepw=",
+      "Fingerprint": "l1s7xm777k",
+      "Integrity": "uZIRYPfclO8rBjQebOs4WYn0RLag58SCbnpatpn/7To=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\banner_chatbot.png",
+      "Identity": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\banner-chatbot.png",
       "SourceId": "AdministradorChatBot",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\",
       "BasePath": "_content/AdministradorChatBot",
-      "RelativePath": "img/banner_chatbot#[.{fingerprint}]?.png",
+      "RelativePath": "img/banner-chatbot#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -119,7 +119,7 @@
       "Integrity": "9MD121vGu73v25CFIpVWoaJ6En9mgyzb6Ted3Uuopa4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\banner_chatbot.png"
+      "OriginalItemSpec": "wwwroot\\img\\banner-chatbot.png"
     },
     {
       "Identity": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\chatbot-default.png",
@@ -143,6 +143,27 @@
       "OriginalItemSpec": "wwwroot\\img\\chatbot-default.png"
     },
     {
+      "Identity": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\login-chatbot.png",
+      "SourceId": "AdministradorChatBot",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\",
+      "BasePath": "_content/AdministradorChatBot",
+      "RelativePath": "img/login-chatbot#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sb0wvlhbhd",
+      "Integrity": "qIwygdJSBfF0Q7uiqN4QVpBFDLJXeOXG4XAYW4pi8s4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\login-chatbot.png"
+    },
+    {
       "Identity": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\js\\site.js",
       "SourceId": "AdministradorChatBot",
       "SourceType": "Discovered",
@@ -157,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "0x421vzjv8",
+      "Integrity": "nA0O5jGkHGfJefbzMOf9K3hwYIl26R4TCUlD18xAvPA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1527,51 +1548,6 @@
       ]
     },
     {
-      "Route": "css/site.a4i8kbz234.css",
-      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3393"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ul0a2xycSNU6CXwUPcI2c6qZkADpHe4jd2hT6lkkepw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 12 Jun 2025 00:46:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "a4i8kbz234"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ul0a2xycSNU6CXwUPcI2c6qZkADpHe4jd2hT6lkkepw="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1582,7 +1558,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3393"
+          "Value": "5614"
         },
         {
           "Name": "Content-Type",
@@ -1590,11 +1566,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ul0a2xycSNU6CXwUPcI2c6qZkADpHe4jd2hT6lkkepw=\""
+          "Value": "\"uZIRYPfclO8rBjQebOs4WYn0RLag58SCbnpatpn/7To=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 12 Jun 2025 00:46:03 GMT"
+          "Value": "Thu, 12 Jun 2025 07:42:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1604,7 +1580,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ul0a2xycSNU6CXwUPcI2c6qZkADpHe4jd2hT6lkkepw="
+          "Value": "sha256-uZIRYPfclO8rBjQebOs4WYn0RLag58SCbnpatpn/7To="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.l1s7xm777k.css",
+      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5614"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uZIRYPfclO8rBjQebOs4WYn0RLag58SCbnpatpn/7To=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 07:42:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l1s7xm777k"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uZIRYPfclO8rBjQebOs4WYn0RLag58SCbnpatpn/7To="
         }
       ]
     },
@@ -1691,8 +1712,8 @@
       ]
     },
     {
-      "Route": "img/banner_chatbot.o50lbgmf29.png",
-      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\banner_chatbot.png",
+      "Route": "img/banner-chatbot.o50lbgmf29.png",
+      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\banner-chatbot.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1727,7 +1748,7 @@
         },
         {
           "Name": "label",
-          "Value": "img/banner_chatbot.png"
+          "Value": "img/banner-chatbot.png"
         },
         {
           "Name": "integrity",
@@ -1736,8 +1757,8 @@
       ]
     },
     {
-      "Route": "img/banner_chatbot.png",
-      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\banner_chatbot.png",
+      "Route": "img/banner-chatbot.png",
+      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\banner-chatbot.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1855,6 +1876,133 @@
       ]
     },
     {
+      "Route": "img/login-chatbot.png",
+      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\login-chatbot.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36967"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qIwygdJSBfF0Q7uiqN4QVpBFDLJXeOXG4XAYW4pi8s4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 07:31:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qIwygdJSBfF0Q7uiqN4QVpBFDLJXeOXG4XAYW4pi8s4="
+        }
+      ]
+    },
+    {
+      "Route": "img/login-chatbot.sb0wvlhbhd.png",
+      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\img\\login-chatbot.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36967"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qIwygdJSBfF0Q7uiqN4QVpBFDLJXeOXG4XAYW4pi8s4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 07:31:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sb0wvlhbhd"
+        },
+        {
+          "Name": "label",
+          "Value": "img/login-chatbot.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qIwygdJSBfF0Q7uiqN4QVpBFDLJXeOXG4XAYW4pi8s4="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.0x421vzjv8.js",
+      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "705"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nA0O5jGkHGfJefbzMOf9K3hwYIl26R4TCUlD18xAvPA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 07:45:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0x421vzjv8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nA0O5jGkHGfJefbzMOf9K3hwYIl26R4TCUlD18xAvPA="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -1865,7 +2013,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "705"
         },
         {
           "Name": "Content-Type",
@@ -1873,11 +2021,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"nA0O5jGkHGfJefbzMOf9K3hwYIl26R4TCUlD18xAvPA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 16:49:51 GMT"
+          "Value": "Thu, 12 Jun 2025 07:45:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1887,52 +2035,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Aylu\\PWIII\\AdministradorChatbot\\AdministradorChatBot\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 11 Jun 2025 16:49:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-nA0O5jGkHGfJefbzMOf9K3hwYIl26R4TCUlD18xAvPA="
         }
       ]
     },

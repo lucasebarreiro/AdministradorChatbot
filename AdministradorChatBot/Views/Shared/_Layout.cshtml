@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="~/AdministradorChatBot.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-<body>
+<body class="d-flex flex-column">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white box-shadow">
             <div class="container-fluid">
@@ -41,12 +41,12 @@
         </nav>
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main class="flex-grow-1">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="mt-auto py-3 bg-dark text-white">
+    <footer class="mt-auto">
         <div class="container">
             &copy; 2025 - AdministradorChatBot - <a class="text-info" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

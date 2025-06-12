@@ -1,22 +1,158 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    background: linear-gradient(135deg, #4134ca 0%, #2a1f8f 30%, #1e1668 70%, #0d0a33 100%) fixed;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    font-weight: bold !important;
+    margin-left: 1.5rem !important;
+}
+
+.navbar-brand, .nav-link, .navbar-nav .btn, .username, .card-title {
+    color: #5afaf8 !important;
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #5afaf8;
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+.navbar-nav .btn-secondary {
+    background-color: transparent !important;
+    border-color: #5afaf8 !important;
+    border-radius: 20px;
+}
+
+    .navbar-nav .btn-secondary:hover {
+        background-color: rgba(90, 250, 248, 0.2) !important;
+    }
+
+.navbar-nav:last-child {
+    margin-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.banner {
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.banner .btn-primary {
+    background: linear-gradient(90deg, #e524cd, #5afaf8) !important;
+    border: none !important;
+    border-radius: 20px !important;
+    color: #fff !important;
+    transition: all 0.3s ease !important;
+    padding: 0.5rem 1.5rem !important;
+    font-size: 1.25rem !important;
+}
+
+    .banner .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(229, 36, 205, 0.4);
+    }
+
+.img-banner {
+    transform: scaleX(-1);
+    width: 100%;
+    aspect-ratio: 1.2/1;
+}
+
+.mis-chatbots {
+    padding-top: 3rem;
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #5afaf8, transparent);
+    border-image-slice: 1;
+}
+
+    .mis-chatbots h2 {
+        color: #5afaf8;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+.chatbot-card {
+    background: linear-gradient(135deg, #2525a5 0%, #0d0a33 100%) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-card-body {
+    padding: 1.5rem;
+}
+
+.btn-group-card {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+    .btn-group-card .btn {
+        flex: 1;
+        min-width: fit-content;
+    }
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        margin-left: 0 !important;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(13, 10, 51, 0.95);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-nav:last-child {
+        margin-left: auto;
+        padding-right: 0;
+    }
+
+    .navbar-nav .btn-secondary {
+        margin: 0.5rem 0 0 0 !important;
+        width: 100%;
+    }
+
+    .banner {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+        .banner .row {
+            flex-direction: column-reverse;
+        }
+
+        .banner .btn-primary {
+            display: block;
+            margin: 1.5rem auto 2rem auto !important;
+            max-width: 250px;
+        }
 }

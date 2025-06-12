@@ -265,3 +265,21 @@ footer {
 .text-center a:hover {
     text-decoration: underline;
 }
+
+/*Register*/
+
+.login-single-container {
+    background: linear-gradient(135deg, #1e1668 0%, #0d0a33 100%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 576px) {
+    .login-single-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+}

@@ -170,15 +170,11 @@ footer {
     height: 60px;
     display: flex;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
 }
-
-    footer .container {
-        display: flex;
-        align-items: center;    
-    }
-
     footer a {
         text-decoration: none;
+        margin-left: 5px;
     }
 
         footer a:hover {

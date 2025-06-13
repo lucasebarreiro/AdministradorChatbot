@@ -1,4 +1,16 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function togglePassword(passwordId, toggleId) {
+    const toggle = document.getElementById(toggleId);
+    toggle?.addEventListener('click', () => {
+        const input = document.getElementById(passwordId);
+        if (!input) return;
 
-// Write your JavaScript code.
+        input.type = input.type === 'password' ? 'text' : 'password';
+        toggle.classList.toggle('fa-eye', input.type === 'text');
+        toggle.classList.toggle('fa-eye-slash', input.type === 'password');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    togglePassword('passwordInput', 'togglePassword');
+    togglePassword('registerPassword', 'toggleRegisterPassword');
+});

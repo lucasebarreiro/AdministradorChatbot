@@ -43,7 +43,14 @@ namespace AdministradorChatBot.Controllers
                 return View(model);
 
             var user = await _authService.RegisterAsync(model.Username, model.Password);
-            return RedirectToAction("Login"); // o redireccioná a la página principal
+
+            if (user == null)
+            {
+                ModelState.AddModelError("Username", "El nombre de usuario ya existe.");
+                return View(model);
+            }
+
+            return RedirectToAction("Login");
         }
 
     }

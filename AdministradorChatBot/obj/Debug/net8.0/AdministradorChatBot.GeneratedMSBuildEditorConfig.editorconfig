@@ -17,59 +17,61 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AdministradorChatBot
 build_property.RootNamespace = AdministradorChatBot
-build_property.ProjectDir = C:\Cursos\AdministradorChatBot\AdministradorChatBot\AdministradorChatBot\
+build_property.ProjectDir = C:\Users\Gian\Source\Repos\AdministradorChatbot\AdministradorChatBot\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Cursos\AdministradorChatBot\AdministradorChatBot\AdministradorChatBot
+build_property.MSBuildProjectDirectory = C:\Users\Gian\Source\Repos\AdministradorChatbot\AdministradorChatBot
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Auth/Login.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Auth/Register.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Home/chat.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Home/chat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjaGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Home/CreateChatbot.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Home/CreateChatbot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVDaGF0Ym90LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Home/EditarChatbot.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Home/EditarChatbot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0YXJDaGF0Ym90LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Home/Index.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Home/Privacy.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Shared/Error.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/_ViewImports.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/_ViewStart.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Cursos/AdministradorChatBot/AdministradorChatBot/AdministradorChatBot/Views/Shared/_Layout.cshtml]
+[C:/Users/Gian/Source/Repos/AdministradorChatbot/AdministradorChatBot/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1ovuhs4j62

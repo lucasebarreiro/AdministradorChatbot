@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot.csproj": {}
+    "C:\\Users\\Gian\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\AdministradorChatBot.csproj": {}
   },
   "projects": {
-    "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot.csproj": {
+    "C:\\Users\\Gian\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\AdministradorChatBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot.csproj",
+        "projectUniqueName": "C:\\Users\\Gian\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\AdministradorChatBot.csproj",
         "projectName": "AdministradorChatBot",
-        "projectPath": "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot.csproj",
-        "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Cursos\\AdministradorChatBot\\AdministradorChatBot\\AdministradorChatBot\\obj\\",
+        "projectPath": "C:\\Users\\Gian\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\AdministradorChatBot.csproj",
+        "packagesPath": "C:\\Users\\Gian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gian\\Source\\Repos\\AdministradorChatbot\\AdministradorChatBot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -90,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

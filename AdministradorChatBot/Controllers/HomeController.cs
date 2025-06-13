@@ -1,3 +1,4 @@
+using System.Text.Json;
 using AdministradorChatBot.Interfaces;
 using AdministradorChatBot.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -22,10 +23,35 @@ public class HomeController(IChatbotService _chatbotService) : Controller
         return View();
     }
 
-    public IActionResult Chat()
+    public async Task<IActionResult> Chat(int id)
     {
-        return View();
+        var chatbot = await _chatbotService.GetChatbotWithKeywordsAndResponsesAsync(id);
+        if (chatbot == null)
+            return NotFound();
+
+        ViewBag.ChatHistory = _chatbotService.GetChatHistory(id, HttpContext.Session);
+        return View(chatbot);
     }
+
+    [HttpPost]
+    public async Task<IActionResult> SendMessage(int chatbotId, string userMessage)
+    {
+        var chatbot = await _chatbotService.GetChatbotWithKeywordsAndResponsesAsync(chatbotId);
+
+        var history = _chatbotService.GetChatHistory(chatbotId, HttpContext.Session);
+        history.Add(new ChatMessage { Sender = "Tú", Message = userMessage });
+
+        var responseText = _chatbotService.GetChatbotResponse(chatbot, userMessage);
+
+        history.Add(new ChatMessage { Sender = "Chatbot", Message = responseText });
+        _chatbotService.SaveChatHistory(chatbotId, history, HttpContext.Session);
+
+        ViewBag.ChatHistory = history;
+        return View("Chat", chatbot);
+    }
+
+
+
 
     [HttpPost]
     public IActionResult CreateChatbot(Chatbot chatbot)

@@ -6,17 +6,19 @@
 
 <div class="container">
     <h2>Chat con @Model.Name</h2>
-    <div class="card mb-3">
-        <div class="card-body">
+    <div class="chat-container">
             @{
                 var chatHistory = ViewBag.ChatHistory as List<ChatMessage> ?? new List<ChatMessage>();
             }
-            <div id="chatHistory" class="mb-3" style="height: 300px; overflow-y: auto; border: 1px solid #ccc; background: #fafafa; padding: 10px;">
+            <div id="chatHistory" class="mb-3">
                 @foreach (var msg in chatHistory)
                 {
-                    <div>
-                        <strong>@msg.Sender:</strong> @msg.Message
-                    </div>
+                <div class="chat-message @(msg.Sender == "Tú" ? "user-message" : "bot-message")">
+                    <strong>@(msg.Sender == "Chatbot" ? Model.Name : msg.Sender):</strong>
+                    <span>@msg.Message</span>
+                </div>
+
+
                 }
             </div>
             <form asp-action="SendMessage" asp-controller="Home" method="post" class="mt-3">
@@ -27,7 +29,6 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-        </div>
     </div>
 </div>
 
